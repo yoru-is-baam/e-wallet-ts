@@ -1,0 +1,1339 @@
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { email: 'email must be a valid email' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:09:46 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 241545216,
+        heapTotal: 189243392,
+        heapUsed: 184976032,
+        external: 22936142,
+        arrayBuffers: 20676074
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83211.046 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': 'af9feddb-0bdd-44a5-a6b1-f0e93bc9eba4',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '143'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/register',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { email: 'email is not allowed to be empty' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:10:21 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 242106368,
+        heapTotal: 190029824,
+        heapUsed: 185575296,
+        external: 22956900,
+        arrayBuffers: 20696792
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83245.234 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': 'b4e371c3-aba6-4d97-ad34-2d407884e9c1',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '133'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/register',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { email: 'email is required' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:10:27 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 241852416,
+        heapTotal: 190029824,
+        heapUsed: 185247512,
+        external: 22911185,
+        arrayBuffers: 20651077
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83251.078 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': 'cac114a0-bb0c-4779-b904-db996cbdee3c',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '115'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/register',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { phone: 'phone number must be a valid number' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:10:42 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 242479104,
+        heapTotal: 190029824,
+        heapUsed: 185822776,
+        external: 22937471,
+        arrayBuffers: 20677363
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83266.218 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': 'e84acaaf-89b5-41a9-ac65-0102b4116ffa',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '162'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/register',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { username: 'username is invalid' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:11:18 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 242315264,
+        heapTotal: 190816256,
+        heapUsed: 185674448,
+        external: 22903780,
+        arrayBuffers: 20643672
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83302.812 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': '20988229-7cdb-49ec-acd1-055b83ab653c',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '60'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/login',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { username: 'username is not allowed to be empty' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:11:31 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 242933760,
+        heapTotal: 191078400,
+        heapUsed: 186520352,
+        external: 22938125,
+        arrayBuffers: 20678017
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83315.671 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': '4dd7d714-8fe3-4c4f-8b0d-a700cf03a9ee',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '51'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/login',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { username: 'username is required' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:11:34 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 242577408,
+        heapTotal: 191078400,
+        heapUsed: 186097592,
+        external: 22907832,
+        arrayBuffers: 20647724
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83318.921 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': '5c04c0f3-5826-44eb-b1a0-4926f8415fc5',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '30'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/login',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:144:13)
+        at Route.dispatch (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\route.js:114:3)
+        at newFn (D:\Coding\nodejs\e-wallet-ts\node_modules\express-async-errors\index.js:16:20)
+        at Layer.handle [as handle_request] (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\layer.js:95:5)
+        at D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:284:15
+        at Function.process_params (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:346:12)
+        at next (D:\Coding\nodejs\e-wallet-ts\node_modules\express\lib\router\index.js:280:10) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: {
+        username: 'username is invalid',
+        password: 'password is invalid'
+      }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    stack: 'Error: Wrong validation\n' +
+      '    at file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts:24:10\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+      '    at Route.dispatch (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+      '    at newFn (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+      '    at D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+      '    at Function.process_params (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+      '    at next (D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js:280:10)',
+    exception: true,
+    date: 'Mon Dec 11 2023 20:11:44 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 15900,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 243122176,
+        heapTotal: 191078400,
+        heapUsed: 186601696,
+        external: 22930346,
+        arrayBuffers: 20670238
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 83328.312 },
+    trace: [
+      {
+        column: 10,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/middleware/validation.ts',
+        function: null,
+        line: 24,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express-async-errors\\index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: 'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\express\\lib\\router\\index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'postman-token': 'cf1aa194-83cd-418c-b46b-cd96be24e33c',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '59'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/login',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/11/2023, 8:07:35 P12'
+}
