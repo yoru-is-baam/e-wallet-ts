@@ -1,6 +1,14 @@
 import { Document, Model } from "mongoose";
+import { Role, UserStatus } from "./types.js";
 
 type UserField = "username" | "profile.email" | "profile.phone" | "profile.birth" | "profile.address" | "profile.name";
+
+type UserPayload = {
+	name: string;
+	userId: string;
+	status: UserStatus;
+	role: Role;
+};
 
 interface IProfile {
 	email: string;
@@ -37,4 +45,4 @@ interface IUserModel extends Model<IUserDocument> {
 	isFieldTaken(field: Record<UserField, string>, excludeUserId?: string): Promise<boolean>;
 }
 
-export { IUser, IProfile, IUserDocument, IUserModel, UserField };
+export { IUser, IProfile, IUserDocument, IUserModel, UserField, UserPayload };

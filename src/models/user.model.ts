@@ -1,4 +1,4 @@
-import { HydratedDocument, Schema, model } from "mongoose";
+import { Schema, model } from "mongoose";
 import bcrypt from "bcryptjs";
 import { generateRandomString } from "../utils/generate-random-string.js";
 import { Pattern, Role, UserStatus } from "../types/types.js";
@@ -43,7 +43,7 @@ const userSchema = new Schema<IUserDocument>(
 			type: String,
 			required: true,
 			enums: ["admin", "user"],
-			default: Role.ADMIN
+			default: Role.USER
 		},
 		profile: {
 			phone: {
