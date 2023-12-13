@@ -1,12 +1,11 @@
 import { HydratedDocument } from "mongoose";
-import { IUserDocument, UserPayload } from "../types/user.js";
-import { Role, UserStatus } from "../types/types.js";
+import { IUserDocument, UserPayload, Role, Status } from "../types/user.js";
 
 const createPayload = (user: HydratedDocument<IUserDocument>): UserPayload => {
 	return {
 		name: user.profile.name,
 		userId: user._id,
-		status: user.status as UserStatus,
+		status: user.status as Status,
 		role: user.role as Role
 	};
 };

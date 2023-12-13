@@ -11,18 +11,6 @@ enum ResponseStatus {
 	SUCCESS = "success"
 }
 
-enum UserStatus {
-	PENDING = "pending",
-	VERIFIED = "verified",
-	DISABLED = "disabled",
-	UPDATING = "updating"
-}
-
-enum Role {
-	ADMIN = "admin",
-	USER = "user"
-}
-
 enum Pattern {
 	NUMERICAL = "0123456789",
 	COMBINATION = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -45,4 +33,9 @@ type InputNameAttribute =
 	| "idFront"
 	| "idBack";
 
-export { ErrorType, ResponseStatus, UserStatus, Role, Pattern, InputNameAttribute };
+enum Token {
+	ACCESS_TOKEN = "accessToken",
+	REFRESH_TOKEN = "refreshToken"
+}
+
+export { ErrorType, ResponseStatus, Pattern, InputNameAttribute, Token };

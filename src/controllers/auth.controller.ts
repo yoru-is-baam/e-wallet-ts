@@ -3,9 +3,8 @@ import { HydratedDocument } from "mongoose";
 import { IUserDocument, UserPayload } from "../types/user.js";
 import { mailService, userService, walletService } from "../services/index.js";
 import { StatusCodes } from "http-status-codes";
-import { ResponseStatus } from "../types/types.js";
-import { Jwt, createPayload } from "../utils/index.js";
-import { env } from "../configs/config.js";
+import { ResponseStatus, Token } from "../types/types.js";
+import { createJWT, createPayload } from "../utils/index.js";
 
 const register = async (req: Request, res: Response): Promise<void> => {
 	const user: HydratedDocument<IUserDocument> = await userService.createUser(req.body);
@@ -20,9 +19,9 @@ const register = async (req: Request, res: Response): Promise<void> => {
 
 	// jwt & cookies
 	const payload: UserPayload = createPayload(user);
-	const accessToken: Jwt = new Jwt(env.jwt.accessTokenSecret, env.jwt.accessTokenLifetime);
+	const accessToken: string = createJWT(payload, Token.ACCESS_TOKEN);
 
-	res.status(StatusCodes.CREATED).json({ status: ResponseStatus.SUCCESS, data: { user } });
+	res.status(StatusCodes.CREATED).json({ status: ResponseStatus.SUCCESS, data: { user: payload, accessToken } });
 };
 
 const login = async (req: Request, res: Response): Promise<void> => {

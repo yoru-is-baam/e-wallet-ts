@@ -1,8 +1,8 @@
 import { Schema, model } from "mongoose";
 import bcrypt from "bcryptjs";
 import { generateRandomString } from "../utils/generate-random-string.js";
-import { Pattern, Role, UserStatus } from "../types/types.js";
-import { IUserDocument, IUserModel, UserField } from "../types/user.js";
+import { Pattern } from "../types/types.js";
+import { IUserDocument, IUserModel, UserField, Role, Status } from "../types/user.js";
 
 const userSchema = new Schema<IUserDocument>(
 	{
@@ -21,7 +21,7 @@ const userSchema = new Schema<IUserDocument>(
 			type: String,
 			required: true,
 			enum: ["pending", "verified", "disabled", "updating"],
-			default: UserStatus.PENDING
+			default: Status.PENDING
 		},
 		wrongCount: {
 			type: Number,
@@ -134,6 +134,6 @@ userSchema.static(
 	}
 );
 
-const User: IUserModel = model<IUserDocument, IUserModel>("users", userSchema);
+const User: IUserModel = model<IUserDocument, IUserModel>("User", userSchema);
 
 export default User;

@@ -1,7 +1,6 @@
 import { User } from "../models/index.js";
 import { HydratedDocument } from "mongoose";
-import { Role, UserStatus } from "../types/types.js";
-import { IUserDocument, IProfile } from "../types/user.js";
+import { IUserDocument, IProfile, Role, Status } from "../types/user.js";
 import { env } from "../configs/config.js";
 
 const createAdminAccount = async (): Promise<void> => {
@@ -23,7 +22,7 @@ const createAdminAccount = async (): Promise<void> => {
 		await User.create({
 			username: "administrator",
 			password: "123456",
-			status: UserStatus.VERIFIED,
+			status: Status.VERIFIED,
 			role: Role.ADMIN,
 			profile,
 			otp: "000000"

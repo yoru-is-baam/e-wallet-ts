@@ -9,12 +9,12 @@ const walletSchema = new Schema<IWalletDocument>({
 	},
 	userId: {
 		type: Schema.Types.ObjectId,
-		ref: "users",
+		ref: "User",
 		required: true,
 		unique: true
 	}
 });
 
-const Wallet: IWalletModel = model<IWalletDocument, IWalletModel>("wallets", walletSchema);
+const Wallet: IWalletModel = model<IWalletDocument, IWalletModel>("Wallet", walletSchema);
 
 export default Wallet;
