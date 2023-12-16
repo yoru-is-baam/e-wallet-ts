@@ -29,11 +29,14 @@ const createUser = async (profile: IProfile): Promise<HydratedDocument<IUserDocu
 	const username = await generateUsername();
 	const password = generateRandomString(Pattern.COMBINATION, 6);
 
-	return User.create({
+	const user: HydratedDocument<IUserDocument> = await User.create({
 		username,
 		password,
 		profile
 	});
+	user._plainPassword = password;
+
+	return user;
 };
 
 const checkFieldExistence = async (field: Record<UserField, string>, excludeUserId?: string): Promise<boolean> => {
@@ -47,7 +50,7 @@ const generateUsername = async (): Promise<string> => {
 
 	do {
 		username = generateRandomString(Pattern.NUMERICAL, 10);
-		isExisted = await User.isFieldTaken({ username } as Record<UserField, string>);
+		isExisted = await checkFieldExistence({ username } as Record<UserField, string>);
 	} while (isExisted);
 
 	return username;

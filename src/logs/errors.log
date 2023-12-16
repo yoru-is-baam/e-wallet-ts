@@ -1337,3 +1337,183 @@
   message: 'middlewareError',
   timestamp: '12/11/2023, 8:07:35 P12'
 }
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at Object.createUser (file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts:15:9)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async register (file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts:10:48) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { email: 'Email already exists' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at Object.createUser (file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts:15:9)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+      '    at async register (file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts:10:48)',
+    stack: 'Error: Wrong validation\n' +
+      '    at Object.createUser (file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts:15:9)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+      '    at async register (file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts:10:48)',
+    exception: true,
+    date: 'Sat Dec 16 2023 13:39:25 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 13584,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 252141568,
+        heapTotal: 198156288,
+        heapUsed: 193610528,
+        external: 22975586,
+        arrayBuffers: 20704958
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 491783.671 },
+    trace: [
+      {
+        column: 9,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts',
+        function: 'Object.createUser',
+        line: 15,
+        method: 'createUser',
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      },
+      {
+        column: 48,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts',
+        function: 'async register',
+        line: 10,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.36.0',
+        accept: '*/*',
+        'postman-token': '1fb3784e-46fb-4d3d-bca1-2261a955ec62',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '163'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/register',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/16/2023, 1:10:49 P12'
+}
+{
+  meta: {
+    error: CustomError: Wrong validation
+        at Object.createUser (file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts:23:9)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async register (file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts:10:48) {
+      errorType: 'ValidationError',
+      statusCode: 400,
+      fields: { phone: 'Phone number already exists' }
+    },
+    level: 'error',
+    message: 'uncaughtException: Wrong validation\n' +
+      'Error: Wrong validation\n' +
+      '    at Object.createUser (file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts:23:9)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+      '    at async register (file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts:10:48)',
+    stack: 'Error: Wrong validation\n' +
+      '    at Object.createUser (file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts:23:9)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+      '    at async register (file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts:10:48)',
+    exception: true,
+    date: 'Sat Dec 16 2023 13:39:33 GMT+0700 (Indochina Time)',
+    process: {
+      pid: 13584,
+      uid: null,
+      gid: null,
+      cwd: 'D:\\Coding\\nodejs\\e-wallet-ts',
+      execPath: 'C:\\Users\\Acer\\scoop\\apps\\nvm\\current\\nodejs\\nodejs\\node.exe',
+      version: 'v19.9.0',
+      argv: [
+        'D:\\Coding\\nodejs\\e-wallet-ts\\node_modules\\ts-node\\dist\\child\\child-entrypoint.js',
+        'D:\\Coding\\nodejs\\e-wallet-ts\\src\\server.ts'
+      ],
+      memoryUsage: {
+        rss: 252104704,
+        heapTotal: 198418432,
+        heapUsed: 193298456,
+        external: 22931135,
+        arrayBuffers: 20660467
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 491791.281 },
+    trace: [
+      {
+        column: 9,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/services/user.service.ts',
+        function: 'Object.createUser',
+        line: 23,
+        method: 'createUser',
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      },
+      {
+        column: 48,
+        file: 'file:///D:/Coding/nodejs/e-wallet-ts/src/controllers/auth.controller.ts',
+        function: 'async register',
+        line: 10,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/register',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.36.0',
+        accept: '*/*',
+        'postman-token': '06766e2c-1dbe-4eb0-a4a5-ad42018d9342',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '164'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/register',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '12/16/2023, 1:10:49 P12'
+}

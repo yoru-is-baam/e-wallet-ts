@@ -44,6 +44,7 @@ interface IUser {
 	profile: IProfile;
 	otp: string;
 	refreshToken: string;
+	_plainPassword: string;
 }
 
 interface IUserDocument extends IUser, Document {

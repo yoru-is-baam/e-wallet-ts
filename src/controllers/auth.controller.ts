@@ -11,11 +11,11 @@ const register = async (req: Request, res: Response): Promise<void> => {
 	await walletService.createWallet(user._id);
 
 	// send mail
-	// mailService.sendEmail(
-	// 	user.profile.email,
-	// 	"Your account ✔",
-	// 	`<p>Username: ${user.username}</p><p>Password: ${user.password}</p>`
-	// );
+	mailService.sendEmail(
+		user.profile.email,
+		"Your account ✔",
+		`<p>Username: ${user.username}</p><p>Password: ${user._plainPassword}</p>`
+	);
 
 	// jwt & cookies
 	const payload: UserPayload = createPayload(user);

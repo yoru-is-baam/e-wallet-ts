@@ -92,6 +92,15 @@ const userSchema = new Schema<IUserDocument>(
 	{ timestamps: true }
 );
 
+userSchema
+	.virtual("_plainPassword")
+	.get(function (): string {
+		return this._plainPassword;
+	})
+	.set(function (plainPassword: string): void {
+		this._plainPassword = plainPassword;
+	});
+
 userSchema.pre("save", async function (this: IUserDocument, next: (err?: Error) => void): Promise<void> {
 	if (!this.isModified("password")) return;
 	const salt: string = await bcrypt.genSalt(10);
